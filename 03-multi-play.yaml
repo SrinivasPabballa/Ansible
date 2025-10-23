@@ -1,5 +1,5 @@
 - name: PLAY-1 
-  hosts: web
+  hosts: localhost
   tasks:
     - name: PLAY-1 and TASK-1 
       ansible.builtin.debug:
@@ -8,7 +8,7 @@
     
     
 - name: PLAY-2 
-  hosts: web
+  hosts: localhost
   tasks:
    - name: PLAY-2 and TASK-1 
      ansible.builtin.debug:
