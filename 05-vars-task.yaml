@@ -6,7 +6,8 @@
     Duration: "120hrs"
   tasks:
     - name: printing the override information
-      Course: "Devops"
+      vars:
+        Course: "Devops"
       ansible.builtin.debug:
         msg: "Iam learning {{Course}} course from trainer {{Trainer}}, in {{Duration}} duration."
 
