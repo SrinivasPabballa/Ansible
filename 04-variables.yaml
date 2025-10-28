@@ -1,9 +1,9 @@
 - name: varibles 
   hosts: localhost
   vars:
-    course: Devops
-    platform: joindevops
-    duration: 120 
+    course: "Devops"
+    platform: "joindevops"
+    duration: "120" 
   tasks:
   - name: printing the value using variables
     ansible.builtin.dubug:
