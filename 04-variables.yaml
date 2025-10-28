@@ -7,4 +7,4 @@
   tasks:
   - name: printing the value using variables
     ansible.builtin.dubug:
-    msg: "Iam learning {{course}}course from {{platform}} platform in {{duration}} hrs duration"
+     msg: "Iam learning {{course}}course from {{platform}} platform in {{duration}} hrs duration"
