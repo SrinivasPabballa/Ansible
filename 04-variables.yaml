@@ -1,10 +1,10 @@
-- name: varibles 
+- name: variables
   hosts: localhost
-  vars:
-    course: "Devops"
-    platform: "joindevops"
-    duration: "120" 
+  vars: 
+    Course: "Ansible"
+    Trainer: "SivaKumar"
+    Duration: "120hrs"
   tasks:
-  - name: printing the value using variables
-    ansible.builtin.dubug:
-      msg: "Iam learning {{course}}course from {{platform}} platform in {{duration}} hrs duration"
+    - name: printing the information
+      ansible.builtin.debug:
+      msg: "Iam learning {{Course}} course from trainer {{Trainer}}, in {{Duration}} duration."
