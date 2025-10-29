@@ -4,7 +4,13 @@
   tasks:
   - name: conditions
     ansible.builtin.command: id expense
-    ignore_errors: true
+    register: USER 
+    ignore_errors: true 
+    
+
+  - name: adding user
+    ansible.buitlin.command: useradd expense
+    when: USER.rc != 0
 
   - name: print
     ansible.builtin.debug:
