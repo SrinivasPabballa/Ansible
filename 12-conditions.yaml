@@ -1,6 +1,6 @@
 - name: checking numbers
   hosts: localhost
-  vars:
+  vars_prompt:
     - name: number
       prompt: please enter the numbers
       private: no
