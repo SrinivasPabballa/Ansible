@@ -39,4 +39,17 @@
   tasks:
   - name: min and max
     ansible.builtin.debug:
-      msg: "min is {{ages | min}} max is {{ages | max}}"
+      msg: "min is {{ages | min}} max is {{ages | max}}"  
+
+
+- name: dictionary
+  hosts: localhost
+  vars:
+    my_dict:
+      course: "Devops"
+      Trainer: "SivaKumar"
+      Duration: "120hrs"
+  tasks:
+    - name: dictionary 
+      ansible.builitin.debug:
+      msg: "my list is {{my_dict | dict2items }}"
