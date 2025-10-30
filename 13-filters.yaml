@@ -52,4 +52,4 @@
   tasks:
     - name: dictionary 
       ansible.builitin.debug:
-      msg: "my list is {{my_dict | dict2items }}"
+        msg: "my list is {{my_dict | dict2items }}"
