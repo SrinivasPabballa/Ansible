@@ -1,11 +1,11 @@
 - name: Installing
   hosts: localhost
   tasks:
-    - name: Installing
-      ansible.builtin.dnf:
-        - name: "{{item}}"
-        - state: latest
-      loop:
-      - mysql
-      - nginx
-      - postfix
+  - name: Installing
+    ansible.builtin.dnf:
+      name: "{{ item }}"
+      state: latest
+    loop:
+    - mysql
+    - nginx
+    - postfix
