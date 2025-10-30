@@ -50,6 +50,6 @@
       Trainer: "SivaKumar"
       Duration: "120hrs"
   tasks:
-    - name: dictionary 
-      ansible.builitin.debug:
-        msg: "my list is {{my_dict | dict2items }}"
+  - name: dictionary 
+    ansible.builitin.debug:
+      msg: "my list is {{my_dict | dict2items }}"
